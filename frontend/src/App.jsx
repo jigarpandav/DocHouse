@@ -7,7 +7,6 @@ import ForgotPassword from "./pages/auth/ForgotPassword";
 import ResetPassword from "./pages/auth/ResetPassword";
 import DashboardLayout from "./components/layout/DashboardLayout";
 import FirmProfile from "./pages/firm/FirmProfile";
-import UpdateBrand from "../../../CompClinic/frontend/src/pages/Brand/updateBrand";
 import UpdateFirm from "./pages/firm/UpdateFirm";
 import TemplateList from "./pages/template/TemplateList";
 import UpdateTemplate from "./pages/template/UpdateTemplate";
