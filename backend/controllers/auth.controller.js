@@ -353,7 +353,7 @@ const adminChangePassword = async(req,res) => {
 
 const getAdmin = async(req,res) => {
     try{
-        console.log()
+      
         const { adminId } = req.body
 
         if(!adminId){

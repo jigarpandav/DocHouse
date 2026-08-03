@@ -6,13 +6,29 @@ import {
 } from "react-icons/fi";
 
 import "./Navbar.css";
+import apiAuth from "../../services/authService";
+import { useState } from "react";
 
 const Navbar = () => {
 
   const navigate = useNavigate();
 
+ const adminId = localStorage.getItem("adminId");
+
+ const [name, setName] = useState("")
+
+  apiAuth.post("/get",
+    {
+      adminId
+    }).then((res) => {
+      if(res.status===200){
+        const json = res.data.data;
+        setName(json.admin_name);
+      }
+    })
+    
   const admin = {
-    name: "Jigar Pandav",
+    name: name,
     profile: ""
   };
 
