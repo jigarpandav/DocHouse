@@ -1,0 +1,291 @@
+/* ===========================================================
+   Register Page
+=========================================================== */
+
+.register-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 4rem 0;
+  background: var(--gradient-background);
+}
+
+.register-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 520px;
+  overflow: hidden;
+  border-radius: 24px;
+  background: var(--color-card);
+  box-shadow: var(--shadow-xl);
+}
+
+/* ===========================================================
+   Left Side
+=========================================================== */
+
+.register-left {
+  position: relative;
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  overflow: hidden;
+  background: var(--gradient-primary);
+}
+
+.register-left::before {
+  position: absolute;
+  top: -120px;
+  right: -120px;
+  width: 280px;
+  height: 280px;
+  content: "";
+  border-radius: 50%;
+  background: rgba(255,255,255,.12);
+}
+
+.register-left::after {
+  position: absolute;
+  bottom: -140px;
+  left: -100px;
+  width: 260px;
+  height: 260px;
+  content: "";
+  border-radius: 50%;
+  background: rgba(255,255,255,.08);
+}
+
+.register-logo{
+  width:80px;
+  height:80px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin-bottom:35px;
+  border-radius:50%;
+  backdrop-filter:blur(12px);
+  background:rgba(255,255,255,.15);
+  border:1px solid rgba(255,255,255,.18);
+}
+
+.register-tag{
+  width:max-content;
+  padding:8px 18px;
+  margin-bottom:28px;
+  border-radius:100px;
+  letter-spacing:2px;
+  font-size:12px;
+  font-weight:600;
+  background:rgba(255,255,255,.14);
+}
+
+.register-left h1{
+  color:white;
+  font-size:52px;
+  line-height:1.15;
+  margin-bottom:22px;
+}
+
+.register-left h1 span{
+  color:#DBEAFE;
+}
+
+.register-left p{
+  color:#E2E8F0;
+  line-height:1.9;
+  font-size:17px;
+  margin-bottom:45px;
+}
+
+.register-features{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+
+.register-features li{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  color:white;
+  font-size:16px;
+  font-weight:500;
+}
+
+/* ===========================================================
+   Right Side
+=========================================================== */
+
+.register-right{
+  padding:70px 60px;
+  background:white;
+}
+
+.register-header{
+  margin-bottom:45px;
+}
+
+.register-header h2{
+  font-size:34px;
+  margin-bottom:12px;
+}
+
+.register-header p{
+  font-size:15px;
+  color:var(--color-text-secondary);
+}
+
+/* ===========================================================
+   Form
+=========================================================== */
+
+.register-right form{
+  display:flex;
+  flex-direction:column;
+  gap:26px;
+}
+
+.input-group{
+  display:flex;
+  flex-direction:column;
+}
+
+.input-group label{
+  margin-bottom:10px;
+  font-weight:600;
+  color:var(--color-heading);
+}
+
+.input-group input{
+  width:100%;
+  height:58px;
+  padding:0 20px;
+  border-radius:16px;
+  border:var(--border-default);
+  background:white;
+  transition:var(--transition-normal);
+  font-size:15px;
+}
+
+.input-group input:hover{
+  border-color:var(--color-primary-light);
+}
+
+.input-group input:focus{
+  border-color:var(--color-primary);
+  box-shadow:var(--focus-ring);
+}
+
+/* ===========================================================
+   Password
+=========================================================== */
+
+.password-box{
+  position:relative;
+}
+
+.password-box input{
+  padding-right:60px;
+}
+
+.password-toggle{
+  position:absolute;
+  top:50%;
+  right:18px;
+  transform:translateY(-50%);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:36px;
+  height:36px;
+  border-radius:50%;
+  color:var(--color-text-secondary);
+  transition:.25s;
+}
+
+.password-toggle:hover{
+  color:var(--color-primary);
+  background:var(--color-primary-light);
+}
+
+/* ===========================================================
+   Register Button
+=========================================================== */
+
+.register-btn{
+  width:100%;
+  height:58px;
+  margin-top:10px;
+  border:none;
+  border-radius:16px;
+  cursor:pointer;
+  font-size:16px;
+  font-weight:700;
+  color:white;
+  background:var(--gradient-primary);
+  box-shadow:var(--shadow-md);
+  transition:var(--transition-normal);
+}
+
+.register-btn:hover{
+  transform:translateY(-2px);
+  box-shadow:var(--shadow-hover);
+}
+
+.register-btn:active{
+  transform:scale(.98);
+}
+
+/* ===========================================================
+   Footer
+=========================================================== */
+
+.login-text{
+  margin-top:35px;
+  text-align:center;
+  color:var(--color-text-secondary);
+  font-size:15px;
+}
+
+.login-text a{
+  margin-left:8px;
+  color:var(--color-primary);
+  font-weight:700;
+  text-decoration:none;
+  transition:var(--transition-normal);
+}
+
+.login-text a:hover{
+  color:var(--color-primary-hover);
+}
+
+/* ===========================================================
+   Decoration
+=========================================================== */
+
+.register-right{
+  position:relative;
+}
+
+.register-right::before{
+  position:absolute;
+  top:40px;
+  right:40px;
+  width:70px;
+  height:70px;
+  content:"";
+  border-radius:50%;
+  background:rgba(37,99,235,.08);
+}
+
+.register-right::after{
+  position:absolute;
+  bottom:40px;
+  left:40px;
+  width:45px;
+  height:45px;
+  content:"";
+  border-radius:50%;
+  background:rgba(14,165,233,.10);
+}

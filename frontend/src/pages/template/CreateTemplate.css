@@ -1,0 +1,707 @@
+/*==========================
+    GOOGLE FONT
+==========================*/
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Inter",sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+}
+
+
+/*==========================
+        PAGE
+==========================*/
+
+.template-page{
+    width:100%;
+    padding:30px;
+}
+
+
+/*==========================
+      HERO SECTION
+==========================*/
+
+.template-hero{
+    width:100%;
+    min-height:170px;
+
+    display:flex;
+    align-items:center;
+    gap:28px;
+
+    padding:35px 45px;
+
+    border-radius:24px;
+
+    background:linear-gradient(
+        135deg,
+        #2456e8 0%,
+        #2f67ef 45%,
+        #4c84ff 100%
+    );
+
+    color:#fff;
+
+    box-shadow:
+        0 15px 40px rgba(47,103,239,.25);
+
+    margin-bottom:30px;
+
+    overflow:hidden;
+    position:relative;
+}
+
+
+/* Decorative Circle */
+
+.template-hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    right:-60px;
+    top:-60px;
+
+    width:220px;
+    height:220px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+}
+
+
+/* Second Circle */
+
+.template-hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    right:120px;
+    bottom:-60px;
+
+    width:140px;
+    height:140px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.05);
+}
+
+
+/*==========================
+      HERO ICON
+==========================*/
+
+.hero-icon{
+
+    width:95px;
+    height:95px;
+
+    min-width:95px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:46px;
+
+    border-radius:22px;
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.15);
+}
+
+
+/*==========================
+      HERO CONTENT
+==========================*/
+
+.hero-content h1{
+
+    font-size:46px;
+    font-weight:700;
+    margin-bottom:14px;
+}
+
+
+.hero-content p{
+
+    width:600px;
+
+    font-size:22px;
+    line-height:1.7;
+
+    color:rgba(255,255,255,.95);
+}
+
+
+/*==========================
+        FORM CARD
+==========================*/
+
+.template-card{
+
+    width:100%;
+
+    background:#fff;
+
+    border-radius:22px;
+
+    padding:35px;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,.08);
+}
+
+
+/*==========================
+      CARD HEADER
+==========================*/
+
+.card-header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom:22px;
+}
+
+
+.header-left{
+
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+
+.small-icon{
+
+    width:58px;
+    height:58px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:#edf2ff;
+
+    color:#2f67ef;
+
+    border-radius:15px;
+
+    font-size:28px;
+}
+
+
+.header-left h3{
+
+    font-size:28px;
+    font-weight:700;
+
+    color:#222;
+
+    margin-bottom:5px;
+}
+
+
+.header-left p{
+
+    color:#8b8b8b;
+
+    font-size:15px;
+}
+
+
+/*==========================
+        HR
+==========================*/
+
+.template-card hr{
+
+    border:none;
+
+    height:1px;
+
+    background:#ececec;
+
+    margin:25px 0;
+}
+
+
+/*==========================
+      FORM GRID
+==========================*/
+
+.form-row{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:25px;
+
+    margin-bottom:30px;
+}
+
+
+/*==========================
+      FORM GROUP
+==========================*/
+
+.form-group{
+
+    display:flex;
+    flex-direction:column;
+}
+
+
+.form-group label{
+
+    font-size:16px;
+
+    font-weight:600;
+
+    margin-bottom:10px;
+
+    color:#222;
+}
+
+
+.form-group span{
+
+    color:#ff3b3b;
+}
+
+
+/*==========================
+       INPUT
+==========================*/
+
+.form-group input,
+.form-group select{
+
+    height:55px;
+
+    border:1px solid #d9dfe8;
+
+    border-radius:12px;
+
+    padding:0 18px;
+
+    font-size:16px;
+
+    outline:none;
+
+    transition:.3s;
+}
+
+
+.form-group input:focus,
+.form-group select:focus{
+
+    border-color:#2f67ef;
+
+    box-shadow:
+        0 0 0 4px rgba(47,103,239,.12);
+}
+
+
+.form-group input::placeholder{
+
+    color:#9f9f9f;
+}
+/*==================================
+      DOCUMENT SECTION
+==================================*/
+
+.document-section{
+    margin-top:10px;
+}
+
+.document-section label{
+    display:block;
+    font-size:16px;
+    font-weight:600;
+    color:#222;
+    margin-bottom:14px;
+}
+
+.document-section label span{
+    color:#ff3b3b;
+}
+
+
+/*==================================
+      INPUT + BUTTON
+==================================*/
+
+.document-input{
+    display:flex;
+    gap:15px;
+    margin-bottom:18px;
+}
+
+.document-input input{
+    flex:1;
+    height:56px;
+    padding:0 18px;
+    border:1px solid #d9dfe8;
+    border-radius:12px;
+    outline:none;
+    font-size:15px;
+    transition:.3s;
+}
+
+.document-input input:focus{
+    border-color:#2f67ef;
+    box-shadow:0 0 0 4px rgba(47,103,239,.12);
+}
+
+.document-input input::placeholder{
+    color:#999;
+}
+
+
+/*==================================
+      ADD BUTTON
+==================================*/
+
+.add-btn{
+    height:56px;
+    padding:0 24px;
+
+    border:none;
+    border-radius:12px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+
+    cursor:pointer;
+
+    font-size:15px;
+    font-weight:600;
+
+    color:#fff;
+
+    background:linear-gradient(
+        135deg,
+        #2456e8,
+        #4c84ff
+    );
+
+    transition:.3s;
+}
+
+.add-btn:hover{
+    transform:translateY(-2px);
+
+    box-shadow:
+        0 10px 20px rgba(47,103,239,.25);
+}
+
+
+/*==================================
+      DOCUMENT LIST
+==================================*/
+
+.document-list{
+    border:1px solid #ebedf3;
+    border-radius:15px;
+    overflow:hidden;
+}
+
+
+/*==================================
+      DOCUMENT ITEM
+==================================*/
+
+.document-item{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:16px 20px;
+
+    background:#fff;
+
+    border-bottom:1px solid #edf0f5;
+
+    transition:.25s;
+}
+
+.document-item:last-child{
+    border-bottom:none;
+}
+
+.document-item:hover{
+    background:#f8fbff;
+}
+
+
+/*==================================
+      LEFT SIDE
+==================================*/
+
+.doc-left{
+
+    display:flex;
+    align-items:center;
+    gap:14px;
+
+    color:#444;
+}
+
+.doc-left svg:first-child{
+
+    color:#a8acb7;
+
+    font-size:18px;
+
+    cursor:grab;
+}
+
+.doc-left span{
+
+    font-size:15px;
+    font-weight:500;
+}
+
+
+/*==================================
+      DELETE BUTTON
+==================================*/
+
+.delete-btn{
+
+    width:42px;
+    height:42px;
+
+    border:none;
+    border-radius:10px;
+
+    background:#fff2f2;
+
+    color:#ef4444;
+
+    cursor:pointer;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    transition:.3s;
+}
+
+.delete-btn:hover{
+
+    background:#ef4444;
+
+    color:#fff;
+
+    transform:scale(1.05);
+}
+
+
+/*==================================
+        NOTE
+==================================*/
+
+.note{
+
+    margin-top:14px;
+
+    color:#7b869c;
+
+    font-size:14px;
+
+    display:flex;
+    align-items:center;
+
+    gap:8px;
+}
+
+
+/*==================================
+        FOOTER
+==================================*/
+
+.card-footer{
+
+    display:flex;
+    justify-content:flex-end;
+    gap:18px;
+
+    margin-top:25px;
+}
+
+
+/*==================================
+      CANCEL BUTTON
+==================================*/
+
+.cancel-btn{
+
+    height:52px;
+
+    padding:0 28px;
+
+    border:1px solid #d7dce6;
+
+    background:#fff;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    font-size:15px;
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.cancel-btn:hover{
+
+    background:#f5f7fb;
+
+    border-color:#c2c9d6;
+}
+
+
+/*==================================
+      SAVE BUTTON
+==================================*/
+
+.save-btn{
+
+    height:52px;
+
+    padding:0 28px;
+
+    border:none;
+
+    border-radius:12px;
+
+    color:#fff;
+
+    cursor:pointer;
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    font-size:15px;
+    font-weight:600;
+
+    background:linear-gradient(
+        135deg,
+        #2456e8,
+        #4c84ff
+    );
+
+    transition:.3s;
+}
+
+.save-btn:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:
+        0 12px 22px rgba(47,103,239,.28);
+}
+
+
+/*==================================
+      RESPONSIVE
+==================================*/
+
+@media (max-width:992px){
+
+    .form-row{
+        grid-template-columns:1fr;
+    }
+
+    .document-input{
+        flex-direction:column;
+    }
+
+    .add-btn{
+        width:100%;
+    }
+
+    .hero-content h1{
+        font-size:34px;
+    }
+
+    .hero-content p{
+        width:100%;
+        font-size:18px;
+    }
+
+    .template-hero{
+        padding:28px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .template-page{
+        padding:15px;
+    }
+
+    .template-hero{
+
+        flex-direction:column;
+        align-items:flex-start;
+
+        gap:18px;
+    }
+
+    .hero-content h1{
+        font-size:28px;
+    }
+
+    .hero-content p{
+        font-size:16px;
+    }
+
+    .template-card{
+        padding:22px;
+    }
+
+    .card-footer{
+        flex-direction:column;
+    }
+
+    .cancel-btn,
+    .save-btn{
+        width:100%;
+        justify-content:center;
+    }
+
+}

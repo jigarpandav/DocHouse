@@ -1,0 +1,334 @@
+/* ==========================================================================
+   Lexuniq Responsive Layout Layer
+   Layout-only breakpoints for React + Tailwind CSS
+   ========================================================================== */
+
+/* ==========================================================================
+   1536px and Below
+   ========================================================================== */
+
+@media (max-width: 1536px) {
+  .container-custom,
+  .responsive-container {
+    max-width: 1280px;
+  }
+
+  .dashboard-grid,
+  .stats-grid,
+  .widget-grid,
+  .card-grid,
+  .responsive-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .content-area,
+  .main-content {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   1280px and Below
+   ========================================================================== */
+
+@media (max-width: 1280px) {
+  .container-custom,
+  .responsive-container {
+    max-width: 1120px;
+    padding-inline: 2rem;
+  }
+
+  .dashboard-layout,
+  .content-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .dashboard-grid,
+  .stats-grid,
+  .widget-grid,
+  .card-grid,
+  .responsive-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .sidebar-layout {
+    grid-template-columns: 240px minmax(0, 1fr);
+  }
+
+  .header-toolbar,
+  .responsive-flex {
+    flex-wrap: wrap;
+  }
+}
+
+/* ==========================================================================
+   1024px and Below
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  .container-custom,
+  .responsive-container {
+    max-width: 960px;
+    padding-inline: 1.5rem;
+  }
+
+  .dashboard-grid,
+  .stats-grid,
+  .widget-grid,
+  .card-grid,
+  .responsive-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .form-grid,
+  .two-column-form,
+  .settings-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .sidebar-layout {
+    grid-template-columns: 220px minmax(0, 1fr);
+  }
+
+  .desktop-stack {
+    flex-direction: column;
+  }
+
+  .desktop-hidden {
+    display: none;
+  }
+
+  .toolbar-actions,
+  .header-actions {
+    justify-content: flex-start;
+  }
+}
+
+/* ==========================================================================
+   992px and Below
+   ========================================================================== */
+
+@media (max-width: 992px) {
+  .container-custom,
+  .responsive-container {
+    max-width: 900px;
+  }
+
+  .sidebar-layout,
+  .dashboard-shell {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .sidebar,
+  .sidebar-region {
+    width: 100%;
+  }
+
+  .content-area,
+  .main-content,
+  .page-content {
+    margin-inline: 0;
+  }
+
+  .header-layout,
+  .toolbar-layout {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .search-section {
+    width: 100%;
+  }
+}
+
+/* ==========================================================================
+   768px and Below
+   ========================================================================== */
+
+@media (max-width: 768px) {
+  .container-custom,
+  .responsive-container {
+    max-width: 100%;
+    padding-inline: 1rem;
+  }
+
+  .dashboard-grid,
+  .stats-grid,
+  .widget-grid,
+  .card-grid,
+  .responsive-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .responsive-flex,
+  .mobile-stack,
+  .tablet-stack,
+  .list-row,
+  .form-row,
+  .header-layout,
+  .toolbar-layout {
+    flex-direction: column;
+  }
+
+  .responsive-flex,
+  .mobile-stack,
+  .tablet-stack,
+  .header-layout,
+  .toolbar-layout {
+    align-items: stretch;
+  }
+
+  .table-responsive,
+  .table-wrapper {
+    overflow-x: auto;
+    width: 100%;
+  }
+
+  .mobile-full-width {
+    width: 100%;
+  }
+
+  .mobile-center {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .mobile-hidden,
+  .tablet-hidden {
+    display: none;
+  }
+
+  .desktop-hidden {
+    display: initial;
+  }
+
+  .content-area,
+  .main-content,
+  .page-content,
+  .section-spacing {
+    padding-inline: 1rem;
+  }
+}
+
+/* ==========================================================================
+   640px and Below
+   ========================================================================== */
+
+@media (max-width: 640px) {
+  .container-custom,
+  .responsive-container {
+    padding-inline: 0.875rem;
+  }
+
+  .dashboard-section,
+  .content-section,
+  .page-section {
+    width: 100%;
+  }
+
+  .header-toolbar,
+  .toolbar-actions,
+  .header-actions,
+  .action-group {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .form-grid,
+  .form-row,
+  .field-grid,
+  .field-group {
+    width: 100%;
+  }
+
+  .image-fluid,
+  .responsive-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .card-grid,
+  .list-grid,
+  .responsive-grid {
+    gap: 1rem;
+  }
+}
+
+/* ==========================================================================
+   480px and Below
+   ========================================================================== */
+
+@media (max-width: 480px) {
+  .container-custom,
+  .responsive-container {
+    padding-inline: 0.75rem;
+  }
+
+  .page-wrapper,
+  .content-area,
+  .main-content,
+  .page-content {
+    width: 100%;
+  }
+
+  .dashboard-grid,
+  .stats-grid,
+  .widget-grid,
+  .card-grid,
+  .list-grid,
+  .responsive-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .header-layout,
+  .toolbar-layout,
+  .responsive-flex,
+  .mobile-stack {
+    gap: 0.875rem;
+  }
+
+  .table-responsive,
+  .table-wrapper {
+    max-width: 100%;
+  }
+
+  .mobile-full-width,
+  .search-section,
+  .action-group {
+    max-width: 100%;
+  }
+}
+
+/* ==========================================================================
+   375px and Below
+   ========================================================================== */
+
+@media (max-width: 375px) {
+  .container-custom,
+  .responsive-container {
+    padding-inline: 0.625rem;
+  }
+
+  .content-area,
+  .main-content,
+  .page-content,
+  .section-spacing {
+    padding-inline: 0.625rem;
+  }
+
+  .header-toolbar,
+  .toolbar-actions,
+  .header-actions,
+  .action-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .responsive-grid,
+  .responsive-flex,
+  .mobile-stack {
+    gap: 0.75rem;
+  }
+}
