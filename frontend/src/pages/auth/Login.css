@@ -65,8 +65,8 @@
   justify-content: center;
   border-radius: 50%;
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(255,255,255);
-  background: rgba(255,255,255,.15);
+  border: 1px solid rgba(255,255,255,.15);
+  background: rgba(255,255,255);
 }
 
 .login-logo img {
