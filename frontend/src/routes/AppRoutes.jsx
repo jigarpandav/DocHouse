@@ -25,7 +25,7 @@ import UpdateCategory from "../pages/categories/UpdateCategory";
 import ClientTemplateList from "../pages/clients/ClientTemplateList";
 import ClientViewTemplate from "../pages/clients/ClientViewTemplate";
 import ProtectedRoute from "./ProtectedRoute";
-
+                
 
 const AppRoutes = () => {
 return(

@@ -2,12 +2,12 @@ import { Link, useNavigate } from "react-router-dom";
 import {
   FiLogOut,
   FiUser,
-  FiShield
 } from "react-icons/fi";
 
 import "./Navbar.css";
 import apiAuth from "../../services/authService";
 import { useState } from "react";
+import mainLogo from "../../assets/images/mainLogo.png";
 
 const Navbar = () => {
 
@@ -51,17 +51,11 @@ const Navbar = () => {
 
           <Link to="/" className="navbar-logo">
 
-            <div className="logo-icon">
-              <FiShield />
-            </div>
-
-            <div>
-
-              <h3>Lexuniq</h3>
-
-              <span>Legal Document Platform</span>
-
-            </div>
+            <img
+              src={mainLogo}
+              alt="Lexuniq"
+              className="navbar-main-logo"
+            />
 
           </Link>
 

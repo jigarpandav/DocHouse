@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import {
-  FiShield,
   FiMail,
   FiArrowLeft,
 } from "react-icons/fi";
@@ -9,6 +8,7 @@ import { toast } from "react-toastify";
 
 import "./ForgotPassword.css";
 import apiAuth from "../../services/authService";
+import brandLogo from "../../assets/images/logo.png";
 
 const ForgotPassword = () => {
   const navigate = useNavigate()
@@ -66,7 +66,7 @@ try {
           <div className="forgot-left">
 
             <div className="forgot-logo">
-              <FiShield size={38} />
+              <img src={brandLogo} alt="Lexuniq" />
             </div>
 
             <span className="forgot-tag">

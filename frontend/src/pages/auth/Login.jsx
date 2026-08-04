@@ -3,7 +3,6 @@ import { Link, useNavigate } from "react-router-dom";
 import {
   FiEye,
   FiEyeOff,
-  FiShield,
   FiMail,
   FiLock,
 } from "react-icons/fi";
@@ -11,6 +10,7 @@ import { toast } from "react-toastify";
 
 import "./Login.css";
 import apiAuth from "../../services/authService";
+import brandLogo from "../../assets/images/logo.png";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -77,7 +77,7 @@ const Login = () => {
           <div className="login-left">
 
             <div className="login-logo">
-              <FiShield size={38} />
+              <img src={brandLogo} alt="Lexuniq" />
             </div>
 
             <span className="login-tag">

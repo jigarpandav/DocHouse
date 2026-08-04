@@ -69,6 +69,13 @@
   border: 1px solid rgba(255,255,255,.18);
 }
 
+.profile-logo img {
+  width: 62px;
+  height: 62px;
+  object-fit: contain;
+  display: block;
+}
+
 .profile-tag {
   width: fit-content;
   padding: 8px 18px;

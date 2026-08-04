@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { FiEye, FiEyeOff, FiShield } from "react-icons/fi";
+import { FiEye, FiEyeOff } from "react-icons/fi";
 import "./Register.css";
 import apiAuth from "../../services/authService";
 import { toast } from "react-toastify";
+import brandLogo from "../../assets/images/logo.png";
 
 const Register = () => {
   const navigate = useNavigate();
@@ -84,7 +85,7 @@ const handleSubmit = async (e) => {
           <div className="register-left">
 
             <div className="register-logo">
-              <FiShield size={38} />
+              <img src={brandLogo} alt="Lexuniq" />
             </div>
 
             <span className="register-tag">

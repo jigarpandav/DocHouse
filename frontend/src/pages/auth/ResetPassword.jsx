@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import {
-  FiShield,
   FiLock,
   FiEye,
   FiEyeOff,
@@ -11,6 +10,7 @@ import { toast } from "react-toastify";
 
 import "./ResetPassword.css";
 import apiAuth from "../../services/authService";
+import brandLogo from "../../assets/images/logo.png";
 
 const ResetPassword = () => {
   const [showNewPassword, setShowNewPassword] = useState(false);
@@ -80,7 +80,7 @@ const ResetPassword = () => {
           <div className="reset-left">
 
             <div className="reset-logo">
-              <FiShield size={38} />
+              <img src={brandLogo} alt="Lexuniq" />
             </div>
 
             <span className="reset-tag">

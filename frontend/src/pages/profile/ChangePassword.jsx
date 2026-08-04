@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import {
-  FiShield,
   FiLock,
   FiEye,
   FiEyeOff,
@@ -11,6 +10,7 @@ import { toast } from "react-toastify";
 
 import "./ChangePassword.css";
 import apiAuth from "../../services/authService";
+import brandLogo from "../../assets/images/logo.png";
 
 const ChangePassword = () => {
   const adminId = localStorage.getItem("adminId");
@@ -99,7 +99,7 @@ const ChangePassword = () => {
           <div className="change-password-left">
 
             <div className="change-password-logo">
-              <FiShield size={38} />
+              <img src={brandLogo} alt="Lexuniq" />
             </div>
 
             <span className="change-password-tag">

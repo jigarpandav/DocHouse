@@ -2,7 +2,6 @@ import { Link, useNavigate } from "react-router-dom";
 import {
   FiUser,
   FiMail,
-  FiShield,
   FiHome,
   FiLock,
   FiX,
@@ -12,6 +11,7 @@ import "./ViewProfile.css";
 import apiAuth from "../../services/authService";
 import { useEffect } from "react";
 import { useState } from "react";
+import brandLogo from "../../assets/images/logo.png";
 
 const ViewProfile = () => {
   const navigate = useNavigate();
@@ -54,7 +54,7 @@ useEffect(() => {
           <div className="profile-left">
 
             <div className="profile-logo">
-              <FiShield size={40} />
+              <img src={brandLogo} alt="Lexuniq" />
             </div>
 
             <span className="profile-tag">
