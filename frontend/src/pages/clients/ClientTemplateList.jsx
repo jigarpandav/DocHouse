@@ -11,7 +11,7 @@ import {
 
 import "./ClientTemplateList.css";
 
-import apiTemp from "../services/templateService";
+import apiTemp from "../../services/templateService";
 
 const ClientTemplateList = () => {
   const adminId = localStorage.getItem("adminId");

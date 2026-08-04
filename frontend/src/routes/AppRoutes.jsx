@@ -22,8 +22,8 @@ import CreateFirm from "../pages/firm/CreateFirm";
 import CreateCategory from "../pages/categories/CreateCategory";
 import ViewCategory from "../pages/categories/ViewCategory";
 import UpdateCategory from "../pages/categories/UpdateCategory";
-import ClientTemplateList from "../clients/ClientTemplateList";
-import ClientViewTemplate from "../clients/ClientViewTemplate";
+import ClientTemplateList from "../pages/clients/ClientTemplateList";
+import ClientViewTemplate from "../pages/clients/ClientViewTemplate";
 import ProtectedRoute from "./ProtectedRoute";
 
 
