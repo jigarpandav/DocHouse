@@ -70,12 +70,6 @@ const ClientTemplateList = () => {
                   <p>Manage and organize your legal document templates.</p>
                 </div>
               </div>
-
-              <div className="header-actions">
-                <Link to="/template/create" className="create-btn">
-                  <FiPlus /> Create Template
-                </Link>
-              </div>
             </div>
 
             {/* STATS */}

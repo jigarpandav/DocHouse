@@ -125,12 +125,17 @@ const handleDownload = () => {
             },
 
             html2canvas:{
-                scale:2,
+              scale:1,
                 useCORS:true,
                 scrollX:0,
                 scrollY:0,
+              backgroundColor:"#eef3fb",
                 windowWidth:794,
                 windowHeight:1123
+            },
+
+            pagebreak:{
+              mode:["avoid-all"]
             },
 
             jsPDF:{
@@ -283,6 +288,12 @@ const handleDownload = () => {
 
 <div className="documents-section">
 
+  <div className="documents-title">
+
+    Required Documents
+
+  </div>
+
   {requireDoc.length === 0 ? (
 
     <div className="empty-doc">
@@ -322,23 +333,7 @@ const handleDownload = () => {
 
 </div>
 
-{/* ===========================
-      DIVIDER
-=========================== */}
 
-<div className="footer-divider">
-
-  <div className="divider-line" />
-
-  <div className="divider-dot">
-
-    <span />
-
-  </div>
-
-  <div className="divider-line" />
-
-</div>
 
 {/* ===========================
         FOOTER

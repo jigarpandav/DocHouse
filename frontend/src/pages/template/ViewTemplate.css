@@ -112,6 +112,42 @@ A4
 
 }
 
+.a4-sheet::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background-image:url("../../assets/images/truth-justice-royalty.png");
+
+    margin-bottom:50px;
+
+    background-repeat:no-repeat;
+
+    background-position:center 58%;
+
+    background-size:390px auto;
+
+    opacity:0.6;
+
+    filter:grayscale(1) brightness(2) contrast(.7);
+
+    pointer-events:none;
+
+    z-index:0;
+
+}
+
+.a4-sheet > *{
+
+    position:relative;
+
+    z-index:1;
+
+}
+
 /*=========================================================
 HEADER
 =========================================================*/
@@ -278,13 +314,39 @@ DOCUMENTS
 
 .documents-section{
 
-    margin:0 35px;
+    width:calc(100% - 70px);
+
+    margin:0 auto;
 
     border:2px solid #dbeafe;
 
     border-radius:18px;
 
+    /* background:rgba(255,255,255,.93); */
+
     overflow:hidden;
+
+}
+
+.documents-title{
+
+    height:54px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:20px;
+
+    font-weight:700;
+
+    color:#111827;
+
+    background:rgba(255,255,255,.88);
+
+    border-bottom:1px solid #dbeafe;
 
 }
 
@@ -363,54 +425,6 @@ DOCUMENTS
     font-size:18px;
 
     font-weight:bold;
-
-}
-
-/*=========================================================
-DIVIDER
-=========================================================*/
-
-.footer-divider{
-
-    display:flex;
-
-    align-items:center;
-
-    gap:15px;
-
-    margin:25px 35px;
-
-}
-
-.divider-line{
-
-    flex:1;
-
-    height:2px;
-
-    background:#dbeafe;
-
-}
-
-.divider-dot{
-
-    width:36px;
-
-    height:36px;
-
-    border-radius:50%;
-
-    background:#000;
-
-    color:#fff;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    font-size:15px;
 
 }
 
@@ -609,5 +623,45 @@ BOTTOM
     font-size:15px;
 
     margin-top:20px;
+
+}
+
+@media print{
+
+    @page{
+
+        size:A4;
+
+        margin:0;
+
+    }
+
+    body{
+
+        background:#fff;
+
+    }
+
+    .template-page{
+
+        background:#fff;
+
+        padding:0;
+
+    }
+
+    .template-actions{
+
+        display:none;
+
+    }
+
+    .a4-sheet{
+
+        margin:0 auto;
+
+        box-shadow:none;
+
+    }
 
 }
