@@ -5,12 +5,12 @@ Navbar
 .navbar-wrapper{
 
     position:sticky;
+    
     top:0;
 
     width:100%;
-    z-index:1000;
 
-    padding:18px 0;
+    z-index:1000;
 
     background:rgba(255,255,255,.85);
 
