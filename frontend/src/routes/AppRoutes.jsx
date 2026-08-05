@@ -25,6 +25,7 @@ import UpdateCategory from "../pages/categories/UpdateCategory";
 import ClientTemplateList from "../pages/clients/ClientTemplateList";
 import ClientViewTemplate from "../pages/clients/ClientViewTemplate";
 import ProtectedRoute from "./ProtectedRoute";
+
                 
 
 const AppRoutes = () => {
@@ -57,6 +58,7 @@ return(
         <Route path="/category" element={<CreateCategory />} />
         <Route path="/categories" element={<ViewCategory />} />
         <Route path="/category/update/:categoryId" element={<UpdateCategory />} />
+
         
         
 

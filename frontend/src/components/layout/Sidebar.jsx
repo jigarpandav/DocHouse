@@ -42,16 +42,7 @@ const Sidebar = () => {
       icon: <FiFileText />,
       path: "/templates",
     },
-    {
-      title: "Projects",
-      icon: <FiFolder />,
-      path: "/projects",
-    },
-    {
-      title: "Documents",
-      icon: <FiFile />,
-      path: "/documents",
-    },
+
     {
       title: "Categories",
       icon: <FiGrid />,
@@ -60,13 +51,9 @@ const Sidebar = () => {
     {
       title: "Clients",
       icon: <FiUsers />,
-      path: "/clients",
+      path: "/client/view",
     },
-    {
-      title: "Reports",
-      icon: <FiBarChart2 />,
-      path: "/reports",
-    },
+
   ];
 
   const settings = [

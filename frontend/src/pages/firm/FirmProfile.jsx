@@ -24,7 +24,7 @@ const FirmProfile = () => {
 
   const navigate = useNavigate();
   const [firmData, setFirmData] = useState({});
-  const [adminData,setAdminData] = useState({})
+  const [adminData,setAdminData] = useState({});
   const adminId = localStorage.getItem("adminId")
 
    const IMGURL = import.meta.env.VITE_IMG_URL;
@@ -41,7 +41,6 @@ const FirmProfile = () => {
       if (res.status === 200) {
 
         setFirmData(res.data.data);
-        console.log(res.data.data)
 
       }
 
