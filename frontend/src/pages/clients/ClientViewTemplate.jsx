@@ -181,6 +181,25 @@ const handleDownload = () => {
 
   };
 
+  const longestDocumentLength = requireDoc.reduce(
+    (maxLength, doc) => Math.max(maxLength, String(doc || "").trim().length),
+    0
+  );
+
+  let documentDensity = 0;
+
+  if (requireDoc.length > 6 || longestDocumentLength > 24) {
+    documentDensity = 1;
+  }
+
+  if (requireDoc.length > 9 || longestDocumentLength > 32) {
+    documentDensity = 2;
+  }
+
+  if (requireDoc.length > 12 || longestDocumentLength > 40) {
+    documentDensity = 3;
+  }
+
   return (
 
     <div className="template-page">
@@ -222,7 +241,7 @@ const handleDownload = () => {
       ======================================================= */}
 
       <div
-        className="a4-sheet"
+        className={`a4-sheet docs-density-${documentDensity}`}
         id="pdf-sheet"
       >
         {/* ===========================

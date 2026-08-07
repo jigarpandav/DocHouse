@@ -345,7 +345,7 @@ DOCUMENTS
 
 .document-item{
 
-    height:58px;
+    height:45px;
 
     display:flex;
 
@@ -399,9 +399,9 @@ DOCUMENTS
 
 .document-check{
 
-    width:32px;
+    width:26px !important;
 
-    height:32px;
+    height:26px !important;
 
     border-radius:50%;
 
