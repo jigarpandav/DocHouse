@@ -227,7 +227,7 @@ const handleDownload = () => {
         </button>
 
         <Link
-          to="/templates"
+          to="/client/view"
           className="theme-btn secondary-btn"
         >
           <FiX />
