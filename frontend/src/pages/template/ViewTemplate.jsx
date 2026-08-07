@@ -19,9 +19,11 @@ const ViewTemplate = () => {
   const adminId = localStorage.getItem("adminId");
   const { templateId } = useParams();
 
-  const IMGURL = import.meta.env.VITE_IMG_URL;
+  const IMGURL = import.meta.env.VITE_IMG_URL || `${window.location.origin}/uploads`;
   const getImageUrl = (fileName) =>
-    fileName ? `${IMGURL}/${fileName}?v=${encodeURIComponent(fileName)}` : "";
+    fileName
+      ? `${IMGURL.replace(/\/$/, "")}/${fileName}?v=${encodeURIComponent(fileName)}`
+      : "";
 
   const [firmData, setFirmData] = useState({});
   const [adminEmail, setAdminEmail] = useState("");

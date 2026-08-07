@@ -27,9 +27,11 @@ const FirmProfile = () => {
   const [adminData,setAdminData] = useState({});
   const adminId = localStorage.getItem("adminId")
 
-   const IMGURL = import.meta.env.VITE_IMG_URL;
+   const IMGURL = import.meta.env.VITE_IMG_URL || `${window.location.origin}/uploads`;
    const getImageUrl = (fileName) =>
-     fileName ? `${IMGURL}/${fileName}?v=${encodeURIComponent(fileName)}` : "";
+     fileName
+       ? `${IMGURL.replace(/\/$/, "")}/${fileName}?v=${encodeURIComponent(fileName)}`
+       : "";
 
     useEffect(() => {
 

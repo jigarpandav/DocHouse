@@ -42,7 +42,7 @@ const [qrPreview, setQrPreview] = useState("");
   const adminId = localStorage.getItem("adminId")
 
 
-     const IMGURL = import.meta.env.VITE_IMG_URL;
+    const IMGURL = import.meta.env.VITE_IMG_URL || `${window.location.origin}/uploads`;
 
        useEffect(() => {
 
@@ -85,13 +85,9 @@ const [qrPreview, setQrPreview] = useState("");
           setUpiId(json.upiId);
           setLogo(json.logo);
           setQrCode(json.qrCode);
-          setLogoPreview(
-  json.logo ? `${IMGURL}/${json.logo}` : ""
-);
+          setLogoPreview(json.logo ? `${IMGURL.replace(/\/$/, "")}/${json.logo}` : "");
 
-setQrPreview(
-  json.qrCode ? `${IMGURL}/${json.qrCode}` : ""
-);
+setQrPreview(json.qrCode ? `${IMGURL.replace(/\/$/, "")}/${json.qrCode}` : "");
 
       }
 
