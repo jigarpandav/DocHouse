@@ -20,6 +20,7 @@ const ClientViewTemplate = () => {
   const { templateId } = useParams();
 
   const IMGURL = import.meta.env.VITE_IMG_URL;
+  console.log("image url",IMGURL);
   const getImageUrl = (fileName) =>
     fileName ? `${IMGURL}/${fileName}?v=${encodeURIComponent(fileName)}` : "";
 
