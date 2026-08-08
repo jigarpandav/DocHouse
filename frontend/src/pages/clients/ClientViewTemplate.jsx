@@ -16,7 +16,7 @@ import apiTemp from "../../services/templateService";
 
 const ClientViewTemplate = () => {
 
-  const adminId = localStorage.getItem("adminId");
+  const adminId = localStorage.getItem("adminId") || "6a7093c6ea3b564981673187";
   const { templateId } = useParams();
 
   const IMGURL = import.meta.env.VITE_IMG_URL || `${window.location.origin}/uploads`;
