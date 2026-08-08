@@ -58,15 +58,6 @@ return(
         <Route path="/category" element={<CreateCategory />} />
         <Route path="/categories" element={<ViewCategory />} />
         <Route path="/category/update/:categoryId" element={<UpdateCategory />} />
-
-        
-        
-
-
-
-
-
-        
         </Route>
 </Route>
         
