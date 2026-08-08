@@ -8,7 +8,7 @@ import apiFirm from "../../services/firmService";
 import "./ClientTemplateList.css";
 
 const ClientTemplateList = () => {
-  const adminId = localStorage.getItem("adminId");
+  const adminId = "6a7093c6ea3b564981673187";
 
   const [templates, setTemplates] = useState([]);
   const [firm, setFirm] = useState({});
